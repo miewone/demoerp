@@ -1,0 +1,20 @@
+server :
+  port: 8080
+
+spring :
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/demoerp?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
+    password: root
+    username: root
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        foramt_sql: true
